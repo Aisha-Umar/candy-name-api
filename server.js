@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const PORT = 5500
 const cors = require('cors')
 
 
@@ -46,8 +45,8 @@ app.get('/api/:name',(request,response)=>{
 })
 
 
-app.listen(process.env.PORT || PORT, ()=> {
-    console.log(`The server is now running on port ${PORT}! Betta 
+app.listen(process.env.PORT || 5500, '0.0.0.0', ()=> {
+    console.log(`The server is now running on port! Betta 
     Go Catch It!`)
 })
 
